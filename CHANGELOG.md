@@ -1,3 +1,16 @@
+## 3.4.4
+ - Update log4j dependency to 2.17.0
+
+## 3.4.3
+ - Update log4j dependency to 2.15.0
+ - Fix: update to Gradle 7 [#145](https://github.com/logstash-plugins/logstash-input-http/pull/145)
+
+## 3.4.2
+ - Docs: added `v8` as an acceptable value for `ecs_compatibility` [#142](https://github.com/logstash-plugins/logstash-input-http/pull/142)
+
+## 3.4.1
+ - Changed jar dependencies to reflect newer versions [#140](https://github.com/logstash-plugins/logstash-input-http/pull/140)
+
 ## 3.4.0
  - Add ECS support, mapping Http header to ECS compatible fields [#137](https://github.com/logstash-plugins/logstash-input-http/pull/137)
 
