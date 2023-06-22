@@ -1,3 +1,29 @@
+## 3.7.1
+  - bump netty to 4.1.93 [#166](https://github.com/logstash-plugins/logstash-input-http/pull/166)
+
+## 3.7.0
+ - Reviewed and deprecated SSL settings to comply with Logstash's naming convention [#165](https://github.com/logstash-plugins/logstash-input-http/pull/165)
+   - Deprecated `ssl` in favor of `ssl_enabled`
+   - Deprecated `ssl_verify_mode` in favor of `ssl_client_authentication`
+   - Deprecated `keystore` in favor of `ssl_keystore_path`
+   - Deprecated `keystore_password` in favor of `ssl_keystore_password`
+
+## 3.6.1
+ - Update Netty dependency to 4.1.87 [#162](https://github.com/logstash-plugins/logstash-input-http/pull/162)
+
+## 3.6.0
+ - Feat: review and deprecate ssl protocol/cipher related settings [#151](https://github.com/logstash-plugins/logstash-input-http/pull/151)
+
+## 3.5.1
+ - Fix: codecs provided with `additional_codecs` now correctly run in the pipeline's context, which means that they respect the `pipeline.ecs_compatibility` setting [#152](https://github.com/logstash-plugins/logstash-input-http/pull/152)
+
+## 3.5.0
+ - Feat: TLSv1.3 support [#146](https://github.com/logstash-plugins/logstash-input-http/pull/146)
+
+## 3.4.5
+ - Build: do not package log4j-api dependency [#149](https://github.com/logstash-plugins/logstash-input-http/pull/149).
+   Logstash provides the log4j framework and the dependency is not needed except testing and compiling.
+
 ## 3.4.4
  - Update log4j dependency to 2.17.0
 
